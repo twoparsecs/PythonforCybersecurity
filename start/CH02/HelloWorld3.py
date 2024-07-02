@@ -10,3 +10,4 @@ age = int(input("What is your age? "))
 futureAge = str(age + 2)
 message = " in two years you will be "
 print(yourName + message + futureAge)
+print("Thanks for playing.")
