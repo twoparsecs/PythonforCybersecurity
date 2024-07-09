@@ -8,7 +8,7 @@ import os
 ip_prefix = "192.168.0."
 current_os = platform.system().lower
 
-for final_octet in range(254):
+for final_octet in range(100):
     ip = ip_prefix + str(final_octet + 1)
     if current_os == "windows":
         ping_cmd = f"ping -c 1 -w 2 {ip} > nul"
