@@ -17,16 +17,21 @@ def ping_host(ip):
 
 def import_adresses():
     lines = []
+    new_dir = "/home/justincase/Desktop/PythonforCybersecurity/start/CH04"
+    os.chdir(new_dir)
     f = open("ips.txt", "r")
     for line in f:
         line = line.strip()
         lines.append(line)
+    
     return lines
     
-ip_address = import_adresses()
+ip_addresses = import_adresses()
 
 for ip in ip_addresses:
     exit_code = ping_host(ip)
     if exit_code == 0:
         print("{0} is online.".format(ip))
+    else:
+        print("{0} is offline or not reachable.".format(ip))
 
