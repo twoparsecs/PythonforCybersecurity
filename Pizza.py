@@ -1,8 +1,7 @@
 #!usr/bin/env python3
 
-# Notes - 7-9-2024
 # IT 102
-# Justin Gardner
+# Justin Gardner - July 
 
 # Write a script that prompts the user for their favorite topping.
 
