@@ -6,9 +6,16 @@
 # Created by Justin Gardner on 7-5-2024
 
 day = input("Is today a good day? Please answer y/n... ")
-if day == "y":
+
+#Created a function for the for loop
+def send_message():
     for i in range(10):
         print("Yeah it is.")
+
+# Calling the above function
+if day == "y":
+    send_message()
+    
 elif day == "n":
     print("I am sorry to hear that... :(")
 else:
