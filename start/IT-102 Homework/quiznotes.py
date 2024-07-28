@@ -1,7 +1,10 @@
 
+name = "Justin"
 
-import os
 
-os.chdir("/home/justincase/Desktop/PythonforCybersecurity/start/IT-102 Homework/")
+def add_score(current):
+    return current + 10
 
-text = "No way!"
+score = add_score(190)
+    
+print(name, "your score is", score)
