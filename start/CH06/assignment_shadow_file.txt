@@ -1,0 +1,4 @@
+salesuser1:$6$xVIkS6raiy2ciIky$BxaVW.dZZt5bCzyTx1h3DKUSfPptrqILDzDGqPLo7Vxg5vpQ3od0kVe8IfcDjxxIFCJYoIVZqipCfSnqAauyg0:19925:0:99999:7:::
+salesuser2:$6$yjLZnvBAPPl01dFI$ru2PX4CDdQ2czdR0h6XIq.vBgWVvTM/cmF2pjn/YRmJ/td5sBGEIgMJxz6P295Bt41E0wsPE2A6tmxRva3f1d1:19925:0:99999:7:::
+salesuser3:$6$iSy0S9uY1t6sGhNN$C35eVjCT5/.1md1ciEkxuuFt3egQqA9lMxGr1bYf2tGNp7YbqMpEdIDMWblzk4l.QGuoIPqsU194X/BwsxgYo0:19925:0:99999:7:::
+salesuser4:$6$hXdx3.rm1weqvqiE$BMeeUazJo3CIvxgSZq5By6RvEA4dujXrpXzldPgHU.2aaO8BLqY5zS3fllmcZja7lL0JZaJJqVuDq4b2TDzWr/:19925:0:99999:7:::
