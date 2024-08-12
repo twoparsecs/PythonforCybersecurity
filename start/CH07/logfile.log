@@ -1,0 +1,4 @@
+192.168.1.1 - justincase [11/Aug/2024:19:58:53 -0700] "GET /images/phocagallery/thumbs/phoca_thumb_l_winterfoto%2018.jpg HTTP/1.1" 404 2048
+192.168.1.1 - justincase [11/Aug/2024:19:59:20 -0700] "GET /images/stories/raith/wohnung_1_web.jpg HTTP/1.1" 404 2048
+192.168.1.1 - justincase [11/Aug/2024:19:59:48 -0700] "GET /apache-log/access.log HTTP/1.1" 404 2048
+192.168.1.1 - justincase [11/Aug/2024:20:00:46 -0700] "POST /administrator/index.php HTTP/1.0" 404 2048
