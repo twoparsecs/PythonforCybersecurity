@@ -10,29 +10,27 @@
 # import modules
 
 import os
-
-# open and read file
+from collections import defaultdict
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-file_name = '/logfile.log'
+file_name = 'newaccess.log'
 
-file_path = dir_path + file_name
+file_path = os.path.join(dir_path, file_name)
 
-f = open(file_path, 'r')
+response_code_count = defaultdict(int)
 
-page404list = []
+try:
+    with open(file_path, 'r') as f:
+        for line in f:
+            parts = line.strip().split()
+            if len(parts) > 8:
+                response_code = parts[8]
+                response_code_count[response_code] += 1
 
-while True:
-    line = f.readline()
-    if line:
-        if "404 " in line:
-            path = (line.strip()).split()[6]
-            error = (line.strip()).split()[8]
-            if path not in page404list:
-                page404list.append(path)
-                print(error, "\t", path)
-            
-    if not line:
-        break
+except Exception as e:
+    print("An error occurred: {}".format(e))
 
-print(f"Total unique 404 paths: {len(page404list)}")
+print("{:<25} {:>10}".format('HTTP Response Code', 'Occurrences'))
+print("-" * 35)
+for code, count in sorted(response_code_count.items()):
+    print("{:<25} {:>10}".format(code, count))
