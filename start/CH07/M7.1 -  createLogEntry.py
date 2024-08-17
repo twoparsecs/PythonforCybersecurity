@@ -16,7 +16,7 @@ def create_log_entry(ip_address, identd, username, \
                      resource_message, http_return_code, return_size, log_file='logfile.log'):
     now = datetime.datetime.now()
     str_now = now.astimezone().strftime('%d/%b/%Y:%H:%M:%S %z')
-    log_entry = (f'{ip_address} {identd} {username} [{str_now}] '
+    log_entry = (f'{ip_address} {identd} {username} - [{str_now}] '
                  f'"{resource_message}" {http_return_code} {return_size}\n')
     
     with open(log_file, 'a') as file:
